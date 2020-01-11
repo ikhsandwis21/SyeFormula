@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tool:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:id="@+id/horizontalFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tool:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/mainFoto"
+                android:layout_width="270dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                tool:src="@color/colorWhite"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/secondFoto"
+                android:layout_width="270dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                tool:src="@color/colorWhite"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/thirdFoto"
+                android:layout_width="270dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                tool:src="@color/colorWhite"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutBody"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/horizontalFoto"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/nama_kue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTitle"
+            android:text="@string/nama_kue"
+            android:fontFamily="arial"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/deskripsi_kue"
+            android:layout_below="@id/nama_kue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deskripsi_kue"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"/>
+
+        <TableLayout
+            android:id="@+id/row_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deskripsi_kue">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:text="@string/bahan"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSubTitle"/>
+                <TextView
+                    android:id="@+id/bahan_kue"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorBlack"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_cara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_bahan">
+
+                <TextView
+                    android:text="@string/cara_membuat"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorSubTitle"/>
+                <TextView
+                    android:id="@+id/cara_kue"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorBlack"/>
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

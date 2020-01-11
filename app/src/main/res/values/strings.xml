@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SyeFormula</string>
+    <string name="title">Sye Formula</string>
+    <string name="subtitle">Resep Kue Jajanan Pasar</string>
+    <string name="nama_kue">Nama Kue</string>
+    <string name="detail">Detail</string>
+    <string name="deskripsi_kue">Deskripsi Kue</string>
+    <string name="bahan">Bahan:</string>
+    <string name="cara_membuat">Cara Membuat</string>
+    <string name="sye_formula">Sye Formula</string>
+    <string name="txtNama">Nama:</string>
+    <string name="txtEmail">Email:</string>
+    <string name="nama">Ikhsan Dwi Septiaji</string>
+    <string name="txtNo_hp">No HP:</string>
+    <string name="Email">ikhsandwis21@gmail.com</string>
+    <string name="NoHP">085807103224</string>
+    <string name="txtIg">IG:</string>
+    <string name="IG">\@buchi_ikhsan</string>
+    <string name="icon_about">Icon About</string>
+</resources>

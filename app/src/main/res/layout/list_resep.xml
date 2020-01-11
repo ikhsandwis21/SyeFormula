@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutBody"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/mainFoto"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="16dp"
+            tool:src="@color/colorWhite"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/nama_kue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/mainFoto"
+            android:layout_toRightOf="@id/mainFoto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTitle"
+            android:background="@color/colorWhite"
+            tool:text="@string/nama_kue"/>
+
+        <TextView
+            android:id="@+id/deskripsi_kue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/nama_kue"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/mainFoto"
+            android:layout_toRightOf="@id/mainFoto"
+            android:ellipsize="end"
+            android:background="@color/colorWhite"
+            android:maxLines="3"
+            tool:text="@string/detail"/>
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
